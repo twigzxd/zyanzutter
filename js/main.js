@@ -147,7 +147,14 @@
         //     // $(this).toggleClass('expand');
         //     $( ".price-box__list-el-1" ).toggle();
         // });
+        $('#changePriceType').on('click',
+            function() {
+                $('#individual, #commercial').toggle(200);
+                $('#individualBtn, #commercialBtn').toggle(200);
+            }
+        );
     });
+
 
 
 })(jQuery);
