@@ -1771,7 +1771,8 @@ body {
     /*transform: translateY(-7px);*/
 
 }
-.priceOptionBtn{
+
+.priceOptionBtn {
     height: 40px;
     margin: 0 10px 0 10px;
     vertical-align: baseline;
@@ -1793,9 +1794,6 @@ body {
 }
 
 
-
-
-
 .fa-chevron-up.open {
     top: 5%;
     transform: rotate(180deg);
@@ -1806,7 +1804,7 @@ body {
     position: relative
 }
 
-.fa-chevron-up{
+.fa-chevron-up {
     top: 0%;
 }
 
@@ -2666,7 +2664,6 @@ body {
     padding: 0 2rem;
 
 
-
 }
 
 .hiring-card {
@@ -2754,11 +2751,11 @@ body {
     transition: all 0.3s ease-in-out
 }
 
-.hiring-card li{
+.hiring-card li {
     font-size: 13px;
 }
 
-.hiring-card ul{
+.hiring-card ul {
     height: 200px;
 }
 
@@ -2767,8 +2764,21 @@ body {
     color: #fff;
 }
 
-.hiringFeature{
+.hiringFeature {
     font-size: 14px;
     padding-left: 25px;
     margin: 0 0 20px 0;
 }
+
+@media screen and  (min-width: 992px) {
+    #commercial{
+        width: 120%;
+        left: -10%;
+        position: relative;
+    }
+    #commercial .col-md-3 {
+        max-width: 20%;
+    }
+}
+
+
