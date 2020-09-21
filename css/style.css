@@ -1793,6 +1793,10 @@ body {
     transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.priceOptionBtn_en {
+    width: 170px;
+}
+
 
 .fa-chevron-up.open {
     top: 5%;
