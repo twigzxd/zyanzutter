@@ -137,12 +137,13 @@ Header
         <div class="sect sect--padding-bottom">
             <div class="container">
                 <header class="section-header">
-                    <h3 id="individualBtn">个人清洁价格</h3>
-                    <h3 class="collapse" id="commercialBtn">商业清洁价格</h3>
-                    <p>（所有基础价格适合1 - 500 sqf的户型,不满$50的订单按照$50计费）</p>
+                    <h3 class="individualBtn" id="individualBtn">个人清洁价格</h3>
+                    <h3 class="collapse commercialBtn" id="commercialBtn">商业清洁价格</h3>
+                    <p class="individualBtn">（基础价格适合1 - 500 sqf的户型,不满$50的订单按照$50计费）</p>
+                    <p class="collapse commercialBtn">（不满$50的订单按照$50计费，最多10%小费）</p>
                     <div class="d-flex justify-content-center">
                         <a class="priceOptionBtn" id="changePriceType">个人/商业</a>
-                        <a class="priceOptionBtn" id="hideAndShowPriceLuxuryElement">显示相同类型<i class="fa fa-chevron-up"
+                        <a class="priceOptionBtn individualBtn" id="hideAndShowPriceLuxuryElement">显示相同类型<i class="fa fa-chevron-up"
                                                                                               id="icon"></i></a>
 
                     </div>
@@ -243,7 +244,6 @@ Header
                                         附加服务：<br>
                                         "空调出风口/暖气槽除尘<br>
                                         贴脚线除尘<br>
-                                        地板打蜡<br>
                                         插座/开关除尘清洁<br>
                                         窗台/窗框除尘<br>
                                         洗衣房地面清洁<br>
@@ -277,12 +277,10 @@ Header
                                     +$45/额外房间
                                 </p>
                                 <ul class="price-box__list">
-                                    <li class="price-box__list-el-1">储物柜/架表面除尘</li>
                                     <li class="price-box__list-el-1">桌面（包括床头柜）整理+清洁</li>
                                     <li class="price-box__list-el-1">家具表面除尘</li>
-                                    <li class="price-box__list-el-1">衣橱内地面清洁</li>
                                     <li class="price-box__list-el-1">厕纸架/毛巾架清洁</li>
-                                    <li class="price-box__list-el-1">储物柜内外面清洁</li>
+                                    <li class="price-box__list-el-1">储物柜/架内外面清洁</li>
                                     <li class="price-box__list-el-1">浴缸/淋浴房清洁</li>
                                     <li class="price-box__list-el-1">马桶内外清洁</li>
                                     <li class="price-box__list-el-1">镜面清洁</li>
@@ -290,7 +288,6 @@ Header
                                     <li class="price-box__list-el-1">墙面清洁</li>
                                     <li class="price-box__list-el-1">厨具清洗</li>
                                     <li class="price-box__list-el-1">冰箱、烤箱外部表面清洁</li>
-                                    <li class="price-box__list-el-1">组合橱柜表面清洁</li>
                                     <li class="price-box__list-el_elite">洗手台整理+清洁</li>
                                     <li class="price-box__list-el_elite">除水渍+镜面抛光</li>
                                     <li class="price-box__list-el_elite">冰箱内部整理+清洗 (冰箱内部除味处理)</li>
@@ -306,8 +303,6 @@ Header
                                     <li class="price-box__list-el_luxury">桌面杂物收纳归置</li>
                                     <li class="price-box__list-el_luxury">地缝复原清洁</li>
                                     <li class="price-box__list-el_luxury">墙体死角除霉</li>
-                                    <li class="price-box__list-el_luxury">防水汽镀晶处理</li>
-                                    <li class="price-box__list-el_luxury">赠送洁厕宝</li>
                                     <li class="price-box__list-el_luxury">冰箱后、炉灶后死角复原清洁</li>
                                     <li class="price-box-circle__list-el">
                                         附加服务：<br>
@@ -383,12 +378,6 @@ Header
                                 </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" role="tab">
-
-                                    宠物用品清洗
-                                    <span class="badge badge-primary badge-pill">45</span>
-                                </a>
-                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
-                                   data-toggle="list" role="tab">
                                     阳台整理清洁
                                     <span class="badge badge-primary badge-pill">40</span>
                                 </a>
@@ -426,7 +415,7 @@ Header
                                    data-toggle="list" role="tab">
 
                                     楼梯地毯
-                                    <span class="badge badge-primary badge-pill">70</span>
+                                    <span class="badge badge-primary badge-pill">5/step</span>
                                 </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" role="tab">

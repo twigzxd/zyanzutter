@@ -150,7 +150,7 @@
         $('#changePriceType').on('click',
             function() {
                 $('#individual, #commercial').toggle(200);
-                $('#individualBtn, #commercialBtn').toggle(200);
+                $('.individualBtn, .commercialBtn').toggle(200);
             }
         );
     });
