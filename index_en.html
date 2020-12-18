@@ -23,6 +23,10 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="description" content="ZyanZutter Inc.is a innovative cleaning service corporation, originated from Toronto. Zutter is dedicated in
+                        revolutionize traditional service industry，create standards，pursuing more scientific
+                        solution for current requirements.">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176068930-1"></script>
@@ -36,6 +40,19 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-176068930-1');
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.zyanzutter.com/",
+            "logo": "http://www.zyanzutter.com/img/favicon.svg",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://query.zyanzutter.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
     </script>
 
 </head>
@@ -115,8 +132,7 @@ Header
             <div class="row about-container">
 
                 <div class="col-lg-6 content order-lg-1 order-2">
-                    <p>Zyan Zutter
-                        Inc.is a innovative cleaning service corporation, originated from Toronto。Zutter is dedicated in
+                    <p>Zyan Zutter Inc.is a innovative cleaning service corporation, originated from Toronto. Zutter is dedicated in
                         revolutionize traditional service industry，create standards，pursuing more scientific
                         solution for current requirements. Our process are stringently enforced, we will proof our promise by your happy result.
                     </p>
@@ -145,6 +161,7 @@ Header
                     <p class="collapse commercialBtn">（minimum charges $50, maximum 10%tips）</p>
                     <div class="d-flex justify-content-center">
                         <a class="priceOptionBtn priceOptionBtn_en" id="changePriceType">Personal/Commercial</a>
+                        <a class="priceOptionBtn individualBtn" id="changeHouseType">condo/house</a>
                         <a class="priceOptionBtn individualBtn" id="hideAndShowPriceLuxuryElement">Hide duplicates<i
                                 class="fa fa-chevron-up"
                                 id="icon"></i></a>
@@ -164,16 +181,21 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  基础价格适合1 - 400 sqf的户型-->
                                 <!--                </p>-->
-                                <h2 class="price-box__discount">
+                                <h2 class="price-box__discount condo">
                                     <span class="price-box__dollar">$</span>149<span
                                         class="price-box__discount--light"></span>
                                 </h2>
-                                <h3 class="price-box__price">
+                                <h3 class="price-box__price condo">
                                     $199
                                 </h3>
-                                <p class="price-box__feat">
+                                <p class="price-box__feat condo">
                                     +$40/Extra Room
                                 </p>
+                                <h2 class="price-box__discount house collapse">
+                                    <span class="price-box__dollar">$</span>20<span
+                                        class="price-box__discount--light"></span>
+                                    <h6 class="house collapse">/100sqft</h6>
+                                </h2>
                                 <ul class="price-box__list">
                                     <li class="price-box__list-el">Table surface</li>
                                     <li class="price-box__list-el">Furniture surface</li>
@@ -208,16 +230,21 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  400 - 500 people-->
                                 <!--                </p>-->
-                                <h2 class="price-box__discount">
+                                <h2 class="price-box__discount condo">
                                     <span class="price-box__dollar">$</span>189<span
                                         class="price-box__discount--light"></span>
                                 </h2>
-                                <h3 class="price-box__price">
+                                <h3 class="price-box__price condo">
                                     $249
                                 </h3>
-                                <p class="price-box__feat">
+                                <p class="price-box__feat condo">
                                     +$40/Extra Room
                                 </p>
+                                <h2 class="price-box__discount house collapse">
+                                    <span class="price-box__dollar">$</span>25<span
+                                        class="price-box__discount--light"></span>
+                                    <h6 class="house collapse">/100sqft</h6>
+                                </h2>
                                 <ul class="price-box__list">
                                     <li class="price-box__list-el-1">Table(Includes nightstand)</li>
                                     <li class="price-box__list-el-1">furniture surface</li>
@@ -270,16 +297,21 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  500+ people-->
                                 <!--                </p>-->
-                                <h2 class="price-box__discount">
-                                    <span class="price-box__dollar">$</span>239<span
+                                <h2 class="price-box__discount condo">
+                                    <span class="price-box__dollar">$</span>299<span
                                         class="price-box__discount--light"></span>
                                 </h2>
-                                <h3 class="price-box__price">
-                                    $299
-                                </h3>
-                                <p class="price-box__feat">
+<!--                                <h3 class="price-box__price condo">-->
+<!--                                    $299-->
+<!--                                </h3>-->
+                                <p class="price-box__feat condo">
                                     +$45/Extra Room
                                 </p>
+                                <h2 class="price-box__discount house collapse">
+                                    <span class="price-box__dollar">$</span>30<span
+                                        class="price-box__discount--light"></span>
+                                    <h6 class="house collapse">/100sqft</h6>
+                                </h2>
                                 <ul class="price-box__list">
                                     <li class="price-box__list-el-1">Shelves/ Racks</li>
                                     <li class="price-box__list-el-1">Table</li>
@@ -355,6 +387,18 @@ Header
                                     <span class="badge badge-primary badge-pill">Price($)</span>
                                 </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    Sanitizing
+                                    <span class="badge badge-primary badge-pill">5/100Sqft</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    Detailed sanitizing( includes all storage internal, fabric surface and AC inlet/out let)
+                                    <span class="badge badge-primary badge-pill">9/100Sqft</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" href="#list-home" role="tab">
 
                                     Floor
@@ -394,6 +438,7 @@ Header
 
                                     Greasy  range hood
                                     <span class="badge badge-primary badge-pill">45</span>
+
                                 </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" role="tab">
@@ -463,6 +508,11 @@ Header
                                     Drain unclog
                                     <span class="badge badge-primary badge-pill">quote</span>
                                 </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+                                    MARBLE GRANITE TRAVERTINE TERRAZZO LIMESTONE(Sealing，Polish)
+                                    <span class="badge badge-primary badge-pill">90/100sqft</span>
+                                </a>
                             </div>
                         </div>
 
@@ -493,7 +543,7 @@ Header
                                 </p>
 
                                 <ul class="price-box__list">
-                                    <li class="price-box__list-el-1">Window</li>
+<!--                                    <li class="price-box__list-el-1">Window(Within 3m Height)</li>-->
                                     <li class="price-box__list-el-1">Table and chair basic</li>
                                     <li class="price-box__list-el-1">Font door 1.5Meter wide walking path</li>
                                     <li class="price-box__list-el-1">Building floor</li>
@@ -638,7 +688,18 @@ Header
                                     Type
                                     <span class="badge badge-primary badge-pill">Price($)</span>
                                 </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
 
+                                    Sanitizing
+                                    <span class="badge badge-primary badge-pill">5/100Sqft</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    Detailed sanitizing( includes all storage internal, fabric surface and AC inlet/out let)
+                                    <span class="badge badge-primary badge-pill">9/100Sqft</span>
+                                </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" role="tab">
 
@@ -766,6 +827,11 @@ Header
                                     Front door walking path（1.5 m wide）
                                     <span class="badge badge-primary badge-pill">15/m</span>
                                 </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+                                    MARBLE GRANITE TRAVERTINE TERRAZZO LIMESTONE(Sealing，Polish)
+                                    <span class="badge badge-primary badge-pill">90/100sqft</span>
+                                </a>
                             </div>
                         </div>
 
@@ -828,7 +894,7 @@ Header
                         <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
                         <h4 class="title"><a href="">Zutter</a></h4>
                         <p class="description">
-                            Zutter provide professional training, both theoretical and hands on practice, for all staff. All staff from Zutter will follow standard process to providing comfortable, high efficient service. Our professional service will provide proper maintenance to extend your belonging's life time.
+                            Zutter provide professional training, both theoretical and hands on practice, for all staff. All staff from Zutter will follow standard process to providing comfortable, high efficient service. Our professional service are utilizing mild, biodegradable chemicals that will provide proper maintenance to extend your belonging's life time.
                         </p>
                     </div>
                 </div>
@@ -962,8 +1028,8 @@ Header
                     <div class="portfolio-wrap">
                         <img src="./img/portfolio/客厅1.JPG" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4><a href="#">Dining Room1</a></h4>
-                            <p>Dining Room1</p>
+                            <h4><a href="#">Dining1</a></h4>
+                            <p>Dining1</p>
                             <div>
                                 <a href="./img/portfolio/客厅1.JPG" data-lightbox="portfolio" data-title="客厅 1"
                                    class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
@@ -977,8 +1043,8 @@ Header
                     <div class="portfolio-wrap">
                         <img src="./img/portfolio/客厅2.JPG" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4><a href="#">Dining Room2</a></h4>
-                            <p>Dining Room2</p>
+                            <h4><a href="#">Dining2</a></h4>
+                            <p>Dining2</p>
                             <div>
                                 <a href="./img/portfolio/客厅2.JPG" data-lightbox="portfolio" data-title="客厅 3"
                                    class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
@@ -992,8 +1058,8 @@ Header
                     <div class="portfolio-wrap">
                         <img src="./img/portfolio/客厅3.JPG" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4><a href="#">Dining Room3</a></h4>
-                            <p>Dining Room3</p>
+                            <h4><a href="#">Dining3</a></h4>
+                            <p>Dining3</p>
                             <div>
                                 <a href="./img/portfolio/客厅3.JPG" data-lightbox="portfolio" data-title="客厅 3"
                                    class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
@@ -1363,9 +1429,10 @@ Header
                 <div class="col-lg-2 col-md-6 footer-links">
                     <h4>Index</h4>
                     <ul>
-                        <li><a href="./doc/服务须知.docx">Terms&Conditions</a></li>
-                        <li><a href="./doc/termsAndPolicies.docx">ServicePolicy</a></li>
-                        <!--                        <li><a href="./doc/privacyTerms.docx">隐私条款</a></li>-->
+
+                        <li><a href="./Services.html">ServicePolicy</a></li>
+                        <li><a href="./Terms&Conditions.html">Terms&Conditions</a></li>
+                        <li><a href="./Subscription.html">Subscription</a></li>
                     </ul>
                 </div>
 
@@ -1426,7 +1493,9 @@ Header
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <!-- Uncomment below i you want to use a preloader -->
 <!-- <div id="preloader"></div> -->
-
+<!--==========================
+  SEO keywords:开荒，cleaning，Domestic cleaning，toronto，missisaga，waterloo，GTA
+============================-->
 <!-- JavaScript Libraries -->
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>

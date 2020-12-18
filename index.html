@@ -23,7 +23,9 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
-
+    <!-- SEO -->
+    <meta name="description"
+          content="ZyanZutter Inc.是源于加拿大的创新型清洁服务公司，成立于多伦多。旨在助力传统服务行业迭代，为行业创造标准，力求用科学和专业服务客户，谦虚探寻更科学，安全，有效的解决方案。">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176068930-1"></script>
     <script>
@@ -37,7 +39,19 @@
 
         gtag('config', 'UA-176068930-1');
     </script>
-
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.zyanzutter.com/",
+            "logo": "http://www.zyanzutter.com/img/favicon.svg",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://query.zyanzutter.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -61,11 +75,11 @@ Header
                 <li><a href="#about">关于我们</a></li>
                 <li><a href="#services">优势</a></li>
                 <li><a href="#portfolio">效果图</a></li>
-<!--                <li><a href="#hiring">成员招募</a></li>-->
+                <!--                <li><a href="#hiring">成员招募</a></li>-->
                 <li><a href="#footer">联系我们</a></li>
                 <li class="drop-down languageSwitcher"><a href="#">中文</a>
                     <ul class="language-switcher">
-                        <li><a class="select-cn" >中文</a></li>
+                        <li><a class="select-cn">中文</a></li>
                         <li><a class="select-en" href="./index_en.html">EN</a></li>
 
                     </ul>
@@ -143,8 +157,10 @@ Header
                     <p class="collapse commercialBtn">（不满$50的订单按照$50计费，最多10%小费）</p>
                     <div class="d-flex justify-content-center">
                         <a class="priceOptionBtn" id="changePriceType">个人/商业</a>
-                        <a class="priceOptionBtn individualBtn" id="hideAndShowPriceLuxuryElement">显示相同类型<i class="fa fa-chevron-up"
-                                                                                              id="icon"></i></a>
+                        <a class="priceOptionBtn individualBtn" id="changeHouseType">condo/house</a>
+                        <a class="priceOptionBtn individualBtn" id="hideAndShowPriceLuxuryElement">显示相同类型<i
+                                class="fa fa-chevron-up"
+                                id="icon"></i></a>
 
                     </div>
                 </header>
@@ -161,16 +177,25 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  基础价格适合1 - 400 sqf的户型-->
                                 <!--                </p>-->
-                                <h2 class="price-box__discount">
+                                <h2 class="price-box__discount condo">
                                     <span class="price-box__dollar">$</span>149<span
                                         class="price-box__discount--light"></span>
                                 </h2>
-                                <h3 class="price-box__price">
+                                <h3 class="price-box__price condo">
                                     $199
                                 </h3>
-                                <p class="price-box__feat">
+                                <p class="price-box__feat condo">
                                     +$40/额外房间
                                 </p>
+                                <!--                                <h2 class="price-box__discount house">-->
+                                <!--                                    <span class="price-box__dollar">$</span>149<span-->
+                                <!--                                        class="price-box__discount&#45;&#45;light"></span>-->
+                                <!--                                </h2>-->
+                                <h2 class="price-box__discount house collapse">
+                                    <span class="price-box__dollar">$</span>20<span
+                                        class="price-box__discount--light"></span>
+                                    <h6 class="house collapse">/100sqft</h6>
+                                </h2>
                                 <ul class="price-box__list">
                                     <li class="price-box__list-el">桌面整理+清洁</li>
                                     <li class="price-box__list-el">家具表面除尘</li>
@@ -204,16 +229,21 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  400 - 500 people-->
                                 <!--                </p>-->
-                                <h2 class="price-box__discount">
+                                <h2 class="price-box__discount condo">
                                     <span class="price-box__dollar">$</span>189<span
                                         class="price-box__discount--light"></span>
                                 </h2>
-                                <h3 class="price-box__price">
+                                <h3 class="price-box__price condo">
                                     $249
                                 </h3>
-                                <p class="price-box__feat">
+                                <p class="price-box__feat condo">
                                     +$40/额外房间
                                 </p>
+                                <h2 class="price-box__discount house collapse">
+                                    <span class="price-box__dollar">$</span>25<span
+                                        class="price-box__discount--light"></span>
+                                    <h6 class="house collapse">/100sqft</h6>
+                                </h2>
                                 <ul class="price-box__list">
                                     <li class="price-box__list-el-1">桌面整理+清洁</li>
                                     <li class="price-box__list-el-1">家具表面除尘</li>
@@ -261,21 +291,26 @@ Header
                             <div class="price-box__wrap">
                                 <div class="price-box__img"></div>
                                 <h1 class="price-box__title">
-                                    豪华复原清洁
+                                    豪华复原/开荒清洁
                                 </h1>
                                 <!--                <p class="price-box__people">-->
                                 <!--                  500+ people-->
                                 <!--                </p>-->
-                                <h2 class="price-box__discount">
-                                    <span class="price-box__dollar">$</span>239<span
+                                <h2 class="price-box__discount condo">
+                                    <span class="price-box__dollar">$</span>299<span
                                         class="price-box__discount--light"></span>
                                 </h2>
-                                <h3 class="price-box__price">
-                                    $299
-                                </h3>
-                                <p class="price-box__feat">
+                                <!--                                <h3 class="price-box__price">-->
+                                <!--                                    $299-->
+                                <!--                                </h3>-->
+                                <p class="price-box__feat condo">
                                     +$45/额外房间
                                 </p>
+                                <h2 class="price-box__discount house collapse">
+                                    <span class="price-box__dollar">$</span>30<span
+                                        class="price-box__discount--light"></span>
+                                    <h6 class="house collapse">/100sqft</h6>
+                                </h2>
                                 <ul class="price-box__list">
                                     <li class="price-box__list-el-1">桌面（包括床头柜）整理+清洁</li>
                                     <li class="price-box__list-el-1">家具表面除尘</li>
@@ -351,6 +386,18 @@ Header
 
                                     类型
                                     <span class="badge badge-primary badge-pill">价格($)</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    室内整体消毒
+                                    <span class="badge badge-primary badge-pill">5/100尺</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    室内整体和细节消毒(包含橱柜内外、织物表面、死角和通风口)
+                                    <span class="badge badge-primary badge-pill">9/100尺</span>
                                 </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" href="#list-home" role="tab">
@@ -461,6 +508,11 @@ Header
                                     管道疏通
                                     <span class="badge badge-primary badge-pill">询价</span>
                                 </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+                                    大理石维护(封层，抛光)
+                                    <span class="badge badge-primary badge-pill">90/100sqft</span>
+                                </a>
                             </div>
                         </div>
 
@@ -479,10 +531,10 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  基础价格适合1 - 400 sqf的户型-->
                                 <!--                </p>-->
-<!--                                <h2 class="price-box__discount">-->
-<!--                                    <span class="price-box__dollar">$</span>49<span-->
-<!--                                        class="price-box__discount&#45;&#45;light"></span>-->
-<!--                                </h2>-->
+                                <!--                                <h2 class="price-box__discount">-->
+                                <!--                                    <span class="price-box__dollar">$</span>49<span-->
+                                <!--                                        class="price-box__discount&#45;&#45;light"></span>-->
+                                <!--                                </h2>-->
                                 <!--                                <h3 class="price-box__price">-->
                                 <!--                                    $149-->
                                 <!--                                </h3>-->
@@ -491,7 +543,7 @@ Header
                                 </p>
 
                                 <ul class="price-box__list">
-                                    <li class="price-box__list-el-1">门窗</li>
+                                    <!--                                    <li class="price-box__list-el-1">门窗(3m以内高)</li>-->
                                     <li class="price-box__list-el-1">门前路面</li>
                                     <li class="price-box__list-el-1">店铺内硬质地面</li>
                                     <li class="price-box__list-el-1">桌椅基础清洁</li>
@@ -514,10 +566,10 @@ Header
                                 <p class="price-box__people">
                                     大堂
                                 </p>
-<!--                                <h2 class="price-box__discount">-->
-<!--                                    <span class="price-box__dollar">$</span>49<span-->
-<!--                                        class="price-box__discount&#45;&#45;light"></span>-->
-<!--                                </h2>-->
+                                <!--                                <h2 class="price-box__discount">-->
+                                <!--                                    <span class="price-box__dollar">$</span>49<span-->
+                                <!--                                        class="price-box__discount&#45;&#45;light"></span>-->
+                                <!--                                </h2>-->
                                 <!--                                <h3 class="price-box__price">-->
                                 <!--                                    $149-->
                                 <!--                                </h3>-->
@@ -550,10 +602,10 @@ Header
                                 <p class="price-box__people">
                                     后厨
                                 </p>
-<!--                                <h2 class="price-box__discount">-->
-<!--                                    <span class="price-box__dollar">$</span>49<span-->
-<!--                                        class="price-box__discount&#45;&#45;light"></span>-->
-<!--                                </h2>-->
+                                <!--                                <h2 class="price-box__discount">-->
+                                <!--                                    <span class="price-box__dollar">$</span>49<span-->
+                                <!--                                        class="price-box__discount&#45;&#45;light"></span>-->
+                                <!--                                </h2>-->
                                 <!--                                <h3 class="price-box__price">-->
                                 <!--                                    $149-->
                                 <!--                                </h3>-->
@@ -583,10 +635,10 @@ Header
                                 <!--                <p class="price-box__people">-->
                                 <!--                  500+ people-->
                                 <!--                </p>-->
-<!--                                <h2 class="price-box__discount">-->
-<!--                                    <span class="price-box__dollar">$</span>49<span-->
-<!--                                        class="price-box__discount&#45;&#45;light"></span>-->
-<!--                                </h2>-->
+                                <!--                                <h2 class="price-box__discount">-->
+                                <!--                                    <span class="price-box__dollar">$</span>49<span-->
+                                <!--                                        class="price-box__discount&#45;&#45;light"></span>-->
+                                <!--                                </h2>-->
                                 <!--                                <h3 class="price-box__price">-->
                                 <!--                                    $299-->
                                 <!--                                </h3>-->
@@ -632,6 +684,18 @@ Header
 
                                     类型
                                     <span class="badge badge-primary badge-pill">价格($)</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    室内整体消毒
+                                    <span class="badge badge-primary badge-pill">5/100尺</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+
+                                    室内整体和细节消毒(包含橱柜内外、织物表面、死角和通风口)
+                                    <span class="badge badge-primary badge-pill">9/100尺</span>
                                 </a>
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" role="tab">
@@ -763,10 +827,16 @@ Header
                                     管道疏通
                                     <span class="badge badge-primary badge-pill">询价</span>
                                 </a>
+
                                 <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                                    data-toggle="list" role="tab">
                                     门前地面（人行道清洁1.5米左右宽）
                                     <span class="badge badge-primary badge-pill">15/米</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+                                   data-toggle="list" role="tab">
+                                    大理石维护(封层，抛光)
+                                    <span class="badge badge-primary badge-pill">90/100sqft</span>
                                 </a>
                             </div>
                         </div>
@@ -1153,7 +1223,7 @@ Header
                         <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
                         <h4 class="title"><a href="">Zutter家政</a></h4>
                         <p class="description">
-                            Zutter家政通过专业的人员培训，理论与实操相结合，所有员工对于全场景的清洁模式具有定制化清洁流程，能够为客户提供舒适，高效，小误差的服务，不仅能够保护客户的设备设施不受损伤，而且可以提供合适的保护及保养，甚至有效提高设备设施的使用寿命。
+                            Zutter家政通过专业的人员培训，理论与实操相结合，所有员工对于全场景的清洁模式具有定制化清洁流程，通过使用我们专业调配的温和可降解清洁试剂，为客户提供舒适，高效，小误差的服务，不仅能够保护客户的设备设施不受损伤，而且可以提供合适的保护及保养，甚至有效提高设备设施的使用寿命。
                         </p>
                     </div>
                 </div>
@@ -1564,100 +1634,100 @@ Header
     <!--==========================
          Hiring Section
        ============================-->
-<!--    <section id="hiring">&lt;!&ndash; #hiring &ndash;&gt;-->
-<!--        <div class="container">-->
-<!--            <header class="section-header">-->
-<!--                <h3>成员招募</h3>-->
-<!--                <p>快来加入我们吧!</p>-->
-<!--                <p>请直接联系客服获取更多信息</p>-->
-<!--            </header>-->
-<!--            <div class="hiring-card">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-4 col-lg-4  wow bounceInUp" data-wow-duration="1.4s">-->
-<!--                        <div class="box">-->
-<!--                            <h2 class="title"><a href="">清洁人员</a></h2>-->
-<!--                            <h5>工作责任</h5>-->
-<!--                            <p class="description">-->
-<!--                            <ul>-->
-<!--                                <li>专业清洁相关的知识</li>-->
-<!--                                <li>认真负责</li>-->
-<!--                                <li>注意细节</li>-->
-<!--                                <li>能够主动配合团队</li>-->
-<!--                                <li>有较强的学习能力，能够快速上手机器设备和服务流程</li>-->
-<!--                            </ul>-->
-<!--                            </p>-->
+    <!--    <section id="hiring">&lt;!&ndash; #hiring &ndash;&gt;-->
+    <!--        <div class="container">-->
+    <!--            <header class="section-header">-->
+    <!--                <h3>成员招募</h3>-->
+    <!--                <p>快来加入我们吧!</p>-->
+    <!--                <p>请直接联系客服获取更多信息</p>-->
+    <!--            </header>-->
+    <!--            <div class="hiring-card">-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-md-4 col-lg-4  wow bounceInUp" data-wow-duration="1.4s">-->
+    <!--                        <div class="box">-->
+    <!--                            <h2 class="title"><a href="">清洁人员</a></h2>-->
+    <!--                            <h5>工作责任</h5>-->
+    <!--                            <p class="description">-->
+    <!--                            <ul>-->
+    <!--                                <li>专业清洁相关的知识</li>-->
+    <!--                                <li>认真负责</li>-->
+    <!--                                <li>注意细节</li>-->
+    <!--                                <li>能够主动配合团队</li>-->
+    <!--                                <li>有较强的学习能力，能够快速上手机器设备和服务流程</li>-->
+    <!--                            </ul>-->
+    <!--                            </p>-->
 
-<!--                            <h5>工作特点</h5>-->
+    <!--                            <h5>工作特点</h5>-->
 
-<!--                            <div class="hiringFeature">工作时间灵活</div>-->
+    <!--                            <div class="hiringFeature">工作时间灵活</div>-->
 
-<!--                            <h5>薪资待遇</h5>-->
-<!--                            <p class="description">$18/h + tip</p>-->
-<!--                            <div class="row justify-content-end" style="margin: 30px 0 0 0">-->
-<!--                                <a href="#footer" class="hiring-card-btn">申请</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-4 col-lg-4  wow bounceInUp" data-wow-duration="1.4s">-->
-<!--                        <div class="box ">-->
-<!--                            <h2 class="title "><a href="">清洁领队</a></h2>-->
-<!--                            <h5>工作责任</h5>-->
-<!--                            <p class="description">-->
-<!--                            <ul>-->
-<!--                                <li>一定的人员管理经验</li>-->
-<!--                                <li>专业清洁相关的知识</li>-->
-<!--                                <li>有领导能力和学习能力，能够快速上手机器设备和服务流程</li>-->
-<!--                                <li>能够以身作则按照流程执行任务，同时监督成员按照规范完成业务流程</li>-->
-<!--                                <li>可以接送和管理设备</li>-->
-<!--                                <li>有较好的和客户打交道的能力</li>-->
-<!--                                <li>能够发现，分析并协同寻找解决问题的方式</li>-->
-<!--                                <li>有相关管理经验优先</li>-->
-<!--                            </ul>-->
-<!--                            </p>-->
-<!--                            <h5>工作特点</h5>-->
+    <!--                            <h5>薪资待遇</h5>-->
+    <!--                            <p class="description">$18/h + tip</p>-->
+    <!--                            <div class="row justify-content-end" style="margin: 30px 0 0 0">-->
+    <!--                                <a href="#footer" class="hiring-card-btn">申请</a>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4 col-lg-4  wow bounceInUp" data-wow-duration="1.4s">-->
+    <!--                        <div class="box ">-->
+    <!--                            <h2 class="title "><a href="">清洁领队</a></h2>-->
+    <!--                            <h5>工作责任</h5>-->
+    <!--                            <p class="description">-->
+    <!--                            <ul>-->
+    <!--                                <li>一定的人员管理经验</li>-->
+    <!--                                <li>专业清洁相关的知识</li>-->
+    <!--                                <li>有领导能力和学习能力，能够快速上手机器设备和服务流程</li>-->
+    <!--                                <li>能够以身作则按照流程执行任务，同时监督成员按照规范完成业务流程</li>-->
+    <!--                                <li>可以接送和管理设备</li>-->
+    <!--                                <li>有较好的和客户打交道的能力</li>-->
+    <!--                                <li>能够发现，分析并协同寻找解决问题的方式</li>-->
+    <!--                                <li>有相关管理经验优先</li>-->
+    <!--                            </ul>-->
+    <!--                            </p>-->
+    <!--                            <h5>工作特点</h5>-->
 
-<!--                            <div class="hiringFeature">工作时间灵活</div>-->
-<!--                            <h5>薪资待遇</h5>-->
-<!--                            <p class="description">$23/h + tip</p>-->
-<!--                            <div class="row justify-content-end" style="margin: 30px 0 0 0">-->
-<!--                                <a href="#footer" class="hiring-card-btn">申请</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-4 col-lg-4  wow bounceInUp" data-wow-duration="1.4s">-->
-<!--                        <div class="box">-->
-<!--                            <h2 class="title"><a href="">区域负责人</a></h2>-->
-<!--                            <h5>工作要求</h5>-->
-<!--                            <p class="description">-->
-<!--                            <ul>-->
-<!--                                <li>出色的人员管理经验</li>-->
-<!--                                <li>专业清洁相关的知识</li>-->
-<!--                                <li>有营销和产品运营的能力</li>-->
-<!--                                <li>有数据分析能力</li>-->
-<!--                                <li>能够提供符合公司发展的建议</li>-->
-<!--                                <li>有相关工作经验的候选人优先</li>-->
-<!--                                <li>适合有管理能力和经验，有主观能动性的人员</li>-->
-<!--                                <li>能够根据需求做内容调整，定期汇报工作，有权责意识</li>-->
-<!--                                <li>积极主动有发展意识</li>-->
-<!--                            </ul>-->
-<!--                            </p>-->
-<!--                            <h5>工作特点</h5>-->
-<!--                            <div class="hiringFeature">-->
-<!--                                工作时间、地点灵活，没有硬性要求-->
-<!--                            </div>-->
-<!--                            <h5>薪资待遇</h5>-->
-<!--                            <p class="description">base + bonus</p>-->
-<!--                            <div class="row justify-content-end" style="margin: 30px 0 0 0">-->
-<!--                                <a href="#footer" class="hiring-card-btn">申请</a>-->
-<!--                            </div>-->
+    <!--                            <div class="hiringFeature">工作时间灵活</div>-->
+    <!--                            <h5>薪资待遇</h5>-->
+    <!--                            <p class="description">$23/h + tip</p>-->
+    <!--                            <div class="row justify-content-end" style="margin: 30px 0 0 0">-->
+    <!--                                <a href="#footer" class="hiring-card-btn">申请</a>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4 col-lg-4  wow bounceInUp" data-wow-duration="1.4s">-->
+    <!--                        <div class="box">-->
+    <!--                            <h2 class="title"><a href="">区域负责人</a></h2>-->
+    <!--                            <h5>工作要求</h5>-->
+    <!--                            <p class="description">-->
+    <!--                            <ul>-->
+    <!--                                <li>出色的人员管理经验</li>-->
+    <!--                                <li>专业清洁相关的知识</li>-->
+    <!--                                <li>有营销和产品运营的能力</li>-->
+    <!--                                <li>有数据分析能力</li>-->
+    <!--                                <li>能够提供符合公司发展的建议</li>-->
+    <!--                                <li>有相关工作经验的候选人优先</li>-->
+    <!--                                <li>适合有管理能力和经验，有主观能动性的人员</li>-->
+    <!--                                <li>能够根据需求做内容调整，定期汇报工作，有权责意识</li>-->
+    <!--                                <li>积极主动有发展意识</li>-->
+    <!--                            </ul>-->
+    <!--                            </p>-->
+    <!--                            <h5>工作特点</h5>-->
+    <!--                            <div class="hiringFeature">-->
+    <!--                                工作时间、地点灵活，没有硬性要求-->
+    <!--                            </div>-->
+    <!--                            <h5>薪资待遇</h5>-->
+    <!--                            <p class="description">base + bonus</p>-->
+    <!--                            <div class="row justify-content-end" style="margin: 30px 0 0 0">-->
+    <!--                                <a href="#footer" class="hiring-card-btn">申请</a>-->
+    <!--                            </div>-->
 
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
-<!--        </div>-->
-<!--    </section>&lt;!&ndash; #hiring &ndash;&gt;-->
+    <!--        </div>-->
+    <!--    </section>&lt;!&ndash; #hiring &ndash;&gt;-->
 </main>
 
 <!--==========================
@@ -1685,9 +1755,9 @@ Header
                 <div class="col-lg-2 col-md-6 footer-links">
                     <h4>文件索引</h4>
                     <ul>
-                        <li><a href="./doc/服务须知.docx">服务须知</a></li>
-                        <li><a href="./doc/termsAndPolicies.docx">服务条款</a></li>
-                        <!--                        <li><a href="./doc/privacyTerms.docx">隐私条款</a></li>-->
+                        <li><a href="./Services.html">服务须知</a></li>
+                        <li><a href="./Terms&Conditions.html">服务条款</a></li>
+                        <li><a href="./Subscription.html">订阅条款</a></li>
                     </ul>
                 </div>
 
@@ -1749,6 +1819,9 @@ Header
 <!-- Uncomment below i you want to use a preloader -->
 <!-- <div id="preloader"></div> -->
 
+<!--==========================
+  SEO keywords:开荒，保洁，家政，清洗，多伦多，密西沙加，GTA，滑铁卢
+============================-->
 <!-- JavaScript Libraries -->
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>

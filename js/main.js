@@ -153,6 +153,12 @@
                 $('.individualBtn, .commercialBtn').toggle(200);
             }
         );
+        $('#changeHouseType').on('click',
+            function() {
+                $('.condo, .house').toggle(200);
+            }
+        );
+
     });
 
 
