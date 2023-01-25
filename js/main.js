@@ -24,7 +24,7 @@
     });
 
     // Initiate the wowjs animation library
-    new WOW().init();
+    new APP().init();
 
     // Header scroll class
     $(window).scroll(function () {
@@ -129,7 +129,9 @@
 // hide and show price elements
     // Preloader (if the #preloader div exists)
     $(window).on('load', function () {
-        // var div = document.getElementById('hideAndShowPriceLuxuryElement');
+
+        // var news = document.getElementById('news');
+        $("#news").css("display", "block");
         var icon = document.getElementById('icon')
         var open = false;
 
